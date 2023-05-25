@@ -415,14 +415,11 @@ class ToastStateFulState extends State<_ToastStateFul>
 
   @override
   Widget build(BuildContext context) {
-    return FadeTransition(
-      opacity: _fadeAnimation as Animation<double>,
-      child: Center(
+    return Center(
         child: Material(
           color: Colors.transparent,
           child: widget.child,
         ),
-      ),
-    );
+      );
   }
 }
